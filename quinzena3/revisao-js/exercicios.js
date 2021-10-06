@@ -44,8 +44,10 @@ return maiorNumero
 
 // EXERCÍCIO 05
 function retornaQuantidadeElementos(array) {
-  
+  const tamanhoArray = array.length
+  return tamanhoArray
 }
+
 
 // EXERCÍCIO 06
 function retornaExpressoesBooleanas() {
