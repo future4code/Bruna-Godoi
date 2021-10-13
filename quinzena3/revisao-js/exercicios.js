@@ -55,20 +55,26 @@ function retornaExpressoesBooleanas() {
   const booleano2 = false
   const booleano3 = !booleano2 
   const booleano4 = !booleano3 
-  
-  const respostanoArray = [
+
+  const respostaNoArray = [
   booleano1 && booleano2 && !booleano4,
   (booleano1 && booleano2) || !booleano3,
   (booleano2 || booleano3) && (booleano4 || booleano1),
   !(booleano2 && booleano3) || !(booleano1 && booleano3),
   !(booleano1) && !(booleano3) || (!booleano4 && booleano3 && booleano3)
   ]
-  return respostanoArray
+  return respostaNoArray
 }
 
 // EXERCÍCIO 07
 function retornaNNumerosPares(n) {
-
+ let numeroPares = []
+ for (let i = 0; numeroPares.length < n; i++){
+   if (i % 2 === 0){
+     numeroPares.push(i)
+   }
+ }
+ return numeroPares
 }
 
 // EXERCÍCIO 08
@@ -90,6 +96,8 @@ function comparaDoisNumeros(num1, num2) {
 
 // EXERCÍCIO 10
 function segundoMaiorEMenor(array) {
+  
+
 
 }
 
@@ -100,28 +108,46 @@ function ordenaArray(array) {
 
 // EXERCÍCIO 12
 function filmeFavorito() {
-
+  let astroDev = {
+    nome: 'O Diabo Veste Prada',
+    ano: 2006,
+    diretor:'David Frankel',
+    atores: ['Meryl Streep', 'Anne Hathaway', 'Emily Blunt', 'Stanley Tucci']
+  }
+  return astroDev
 }
 
 // EXERCÍCIO 13
 function imprimeChamada() {
-  // "Venha assistir ao filme NOME_DO_FILME, de ANO, dirigido por DIRECAO e estrelado por ELENCO."
+  let astroDev = {
+    nome: 'O Diabo Veste Prada',
+    ano: 2006,
+    diretor:'David Frankel',
+    atores: ['Meryl Streep', 'Anne Hathaway', 'Emily Blunt', 'Stanley Tucci']
+  }
+  const imprimeFrase = `Venha assistir ao filme ${astroDev.nome}, de ${astroDev.ano}, dirigido por ${astroDev.diretor} e estrelado por ${astroDev.atores[0]}, ${astroDev.atores[1]}, ${astroDev.atores[2]}, ${astroDev.atores[3]}.`
+  return imprimeFrase
 }
 
 // EXERCÍCIO 14
 function criaRetangulo(lado1, lado2) {
-
+const triangulo = {
+  largura: lado1,
+  altura: lado2,
+  perimetro: 2 * (lado1 + lado2),
+  area: lado1 * lado2
+}
+return triangulo 
 }
 
 // EXERCÍCIO 15
 function anonimizaPessoa(pessoa) {
-
+  pessoa.nome= "ANÔNIMO"
+  return pessoa
 }
-
 // EXERCÍCIO 16A
 function maioresDe18(arrayDePessoas) {
-
-}
+ 
 
 // EXERCÍCIO 16B
 function menoresDe18(arrayDePessoas) {
