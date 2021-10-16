@@ -1,0 +1,158 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+
+/*-------------------------------HEADER*/
+header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+
+
+}
+
+.coluna-links a{
+    text-decoration: none;
+    color: #111;
+    padding: 5rem;
+    padding: 1rem;
+    border-bottom: 5px  groove;
+    border-radius: 10%;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+header img {
+    max-width: auto;
+    width: 40%;
+
+}
+/* MAIN */
+.produtos img{
+    width: 10rem;
+}
+.produtos{
+    border-collapse: collapse;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+.produtos th, td{
+    border: solid 2px #111;
+    padding: 10px;
+}
+/*-------------------------------FOOTER*/
+footer{
+    background-color:rgb(92, 2, 2);
+    padding: 2rem;
+    
+}
+.img-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    list-style: none;
+    
+
+}
+.img-footer img {
+    max-width: 100%;
+    width: 5%;
+    
+}
+.frase-footer{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-size: 2rem;
+
+}
