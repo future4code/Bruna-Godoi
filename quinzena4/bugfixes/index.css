@@ -23,6 +23,15 @@ input {
     height: 30px;
     width: 500px;
     border-bottom:  4px  solid black;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+.botao-voltar{
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+
 }
 
 button:focus {
