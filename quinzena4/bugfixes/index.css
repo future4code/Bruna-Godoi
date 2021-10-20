@@ -8,7 +8,9 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    list-style: none;
+}
 h2 {
     background-color: #fe7e02;
     padding: 10px 5px 10px 5px;
@@ -69,6 +71,10 @@ div img {
 #container-de-descricao {
     background-color: #2274a5;
     color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
 #container-de-descricao>ol {
