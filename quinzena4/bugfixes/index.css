@@ -45,6 +45,7 @@ div>p:first-child {
     color: white;
 }
 
+
 .botao-amarelo:hover {
     background-color: #c44f00;
 }
@@ -112,7 +113,12 @@ td button {
     border-radius: 5px;
     color: black;
 }
-
+td button:hover{
+    background-color:#d4b116 ;
+}
+td button:active {
+    color: rgb(248, 246, 246);
+}
 .container-do-search {
     margin-top: 20px;
     height: 100px;
@@ -131,4 +137,9 @@ td button {
 
 #back-button:hover {
     background-color: #635a3d
+    
+}
+#back-button:active{
+   color: #fff;
+    
 }
