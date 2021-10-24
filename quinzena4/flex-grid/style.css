@@ -44,17 +44,57 @@ time, mark, audio, video {
 /* MAIN */
 .container-main{
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    background-color: var(--rosaClaro);
+    grid-template-columns: 1fr 5fr;
+    
 }
 .container-nav{
-}
-.container-nav>section>img{
-    width: 8%;
-    padding-right: 0.5rem;
+    background-color: var(--rosaClaro);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 1rem;
+
 }
 .sidebar{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.container-nav>section>img{
+    width: 22px;
+    padding-left: 0.5rem;
+}
+
+.container-nav>section>a{
+    margin-right: 3.5rem;
+    color:black
+}
+.container-div{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.container-div>section>img{
+    width: 240px;
+}
+.container-section{
+    box-shadow: 0 5px 5px 0 var(--sombra);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.container-section>p{
+    font-size: 0.9rem;
+}
+.container-section>h2{
+    padding-bottom: 12px;
+}
+/* FOOTER */
+footer{
+background-color: var(--rosaEscuro);
+height: 2rem;
+display: flex;
+align-items: center;
+justify-content: center;
 
 }
