@@ -5,8 +5,8 @@ import styled from 'styled-components';
 const Container = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 350px;
+  justify-content: space-around;
+  width: 100%;
 
   button {
     width: 60px;
@@ -22,29 +22,19 @@ const Carinhas = styled.img`
   width: 35px;
 `;
 
+const CardContainer = styled.div`
+  width: 100%;
+`;
 function Head() {
   const [mudaTela, setmudaTela] = useState(false);
 
   return (
-    <div>
-      <div>
+    <CardContainer>
+      <Container>
         <Imagem src="/img/astromatch.jpeg" />
-      </div>
-
-      {mudaTela ? (
-        setmudaTela(
-          <Container>
-            <div>
-              <Carinhas src="/img/carinhas.jpeg" />
-            </div>
-          </Container>
-        )
-      ) : (
-        <div>
-          <Carinhas src="/img/carinhas.jpeg" />
-        </div>
-      )}
-    </div>
+        <Carinhas src="/img/carinhas.jpeg" />
+      </Container>
+    </CardContainer>
   );
 }
 
