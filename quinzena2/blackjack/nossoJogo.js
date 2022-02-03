@@ -10,17 +10,33 @@
  * 
  * 
  */
-    let cartasUser=[];
-    let cartasPC=[];
-    
-    let iniciar = confirm("Bem-vindo ao jogo Blackjack! \n Deseja iniciar uma nova rodada?")
-    if(iniciar){
-       let cartasIniciais=false;
-       while(!cartasIniciais){
-        cartasUser.push(comprarCarta())
-        cartasUser.push(comprarCarta())
-        cartasPC.push(comprarCarta())
-        cartasPC.push(comprarCarta())
-       }
-      }
-      // Não to conseguindo realizar esse projeto, desculpem. :(
+console.log('Olá, Bem-vindo(a) ao jogo BlackJack!');
+
+let jogo = confirm('Quer iniciar um novo jogo?');
+
+if (jogo === true) {
+  let cartaUsuario1 = comprarCarta();
+  let cartaUsuario2 = comprarCarta();
+  let cartaPc1 = comprarCarta();
+  let cartaPc2 = comprarCarta();
+
+  let pontuacaoUsuario = cartaUsuario1.valor + cartaUsuario2.valor;
+  let pontuacaoPc = cartaPc1.valor + cartaPc2.valor;
+
+  console.log(
+    `Cartas do Usuario ${cartaUsuario1.texto} - ${cartaUsuario2.texto} - ${pontuacaoUsuario}`
+  );
+  console.log(
+    `Cartas do PC ${cartaPc1.texto} - ${cartaPc2.texto} - ${pontuacaoPc}`
+  );
+
+  if (pontuacaoUsuario > pontuacaoPc) {
+    console.log('Usuário GANHOU');
+  } else if (pontuacaoPc > pontuacaoUsuario) {
+    console.log('PC GANHOU');
+  } else if (pontuacaoUsuario === pontuacaoPc) {
+    console.log('EMPATE');
+  }
+} else {
+  console.log('Até a próxima');
+}
