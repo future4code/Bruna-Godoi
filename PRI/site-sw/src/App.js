@@ -7,11 +7,11 @@ function App() {
   const renderPage = () => {
     switch (selectPage) {
       case 'page-list':
-        return <CharacterListPage />;
+        return <CharacterListPage setSelectPage={setSelectPage} />;
       case 'detail-page':
-        return <CharacterDetailPage />;
+        return <CharacterDetailPage setSelectPage={setSelectPage} />;
       default:
-        return <CharacterListPage />;
+        return <CharacterListPage setSelectPage={setSelectPage} />;
     }
   };
   return (

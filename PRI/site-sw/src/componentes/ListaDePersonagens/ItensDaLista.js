@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 const ContainerLista = styled.div`
   border: solid black 1px;
@@ -13,10 +15,10 @@ const ContainerLista = styled.div`
   }
 `;
 
-function ItensDaLista() {
+function ItensDaLista(props) {
   return (
     <ContainerLista>
-      <p>Personagens</p>
+      <p>{props.nomePersonagem}</p>
     </ContainerLista>
   );
 }
