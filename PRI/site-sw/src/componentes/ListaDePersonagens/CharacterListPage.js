@@ -16,7 +16,7 @@ function CharacterListPage(props) {
         console.log(error);
       });
   }, []);
-  console.log(personagens);
+
   return (
     <div>
       <h1>Lista de Personagens</h1>
@@ -24,9 +24,12 @@ function CharacterListPage(props) {
       {personagens.length &&
         personagens.map((personagem) => {
           return (
-            <button onClick={() => props.setSelectPage('detail-page')}>
-              <ItensDaLista nomePersonagem={personagem.name} />
-            </button>
+            <div onClick={() => props.setSelectPage('detail-page')}>
+              <ItensDaLista
+                onClick={() => props.setURLPersonagem(personagem.url)}
+                nomePersonagem={personagem.name}
+              />
+            </div>
           );
         })}
     </div>
