@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import CharacterDetailPage from '../DetalheDePersonagens/CharacterDetailPage';
+
 import ItensDaLista from './ItensDaLista';
 import axios from 'axios';
 
